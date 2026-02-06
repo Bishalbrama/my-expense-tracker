@@ -1,0 +1,80 @@
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --accent: #28a745;
+}
+
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f9;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.input-section, .filter-section {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { opacity: 0.8; }
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+li {
+    background: var(--card-bg);
+    margin-bottom: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.filter-btn {
+    background-color: #6c757d;
+    margin: 2px;
+}
+
+#theme-toggle {
+    background: #555;
+    margin-bottom: 20px;
+}
